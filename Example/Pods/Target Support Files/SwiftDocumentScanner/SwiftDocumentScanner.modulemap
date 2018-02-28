@@ -1,0 +1,6 @@
+framework module SwiftDocumentScanner {
+  umbrella header "SwiftDocumentScanner-umbrella.h"
+
+  export *
+  module * { export * }
+}

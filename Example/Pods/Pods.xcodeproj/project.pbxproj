@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0621F5319AF8D1126FA38A4179783F36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		144EDEA226BB38A454B841F3AF6B646F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		37DD8E641D1F0C19D6AD47D18A8FBE61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		88634B5255BD8D367BA509734FEA0DEE /* Pods-SwiftDocumentScanner_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3F49871A48D0E68079D7F7EAF75D8D /* Pods-SwiftDocumentScanner_Example-dummy.m */; };
+		8F14A97DB4C5B7FCE8E8B026C802737C /* Pods-SwiftDocumentScanner_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42998D084A5B2E45A2287D5362B86DC7 /* Pods-SwiftDocumentScanner_Tests-dummy.m */; };
+		91B277F3F161C993CEA44963B398ABD3 /* SwiftDocumentScanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DA93A2F52D66D1A827E316E1EE219C2 /* SwiftDocumentScanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA776CC428FEF2DCAD4175E874048C59 /* Pods-SwiftDocumentScanner_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CF50A91125FA4588946DAC4CF7E7F9E1 /* Pods-SwiftDocumentScanner_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB14B3DD84FC0979A62DC2B6186129D2 /* SwiftDocumentScanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCDCC09FD7831B9F3901CEAADAF2DD5 /* SwiftDocumentScanner-dummy.m */; };
+		FD7839F589308980B9F7A150F67114BC /* Pods-SwiftDocumentScanner_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AFBB000B7C0C1C4DA3EC4BFB8BADB23 /* Pods-SwiftDocumentScanner_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F7828A293C34514D2D50AE71D2458E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1F398A60FB776D3571F90FAECB94D3A;
+			remoteInfo = SwiftDocumentScanner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0552D96F4CD2E343455099275DDAC421 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E77EA20431AB174BF4CC51BE48F61E9 /* SwiftDocumentScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftDocumentScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2583568CD8C457FA773980325D096E13 /* Pods-SwiftDocumentScanner_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftDocumentScanner_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2BF2AD0C674ED80A6047140FAE8CF366 /* Pods-SwiftDocumentScanner_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftDocumentScanner_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3321B9B032B01546B1ACF3AFFA72AF63 /* SwiftDocumentScanner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftDocumentScanner-prefix.pch"; sourceTree = "<group>"; };
+		35A5BA86D426429916D5D1DFAFE46459 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3DA93A2F52D66D1A827E316E1EE219C2 /* SwiftDocumentScanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftDocumentScanner-umbrella.h"; sourceTree = "<group>"; };
+		42998D084A5B2E45A2287D5362B86DC7 /* Pods-SwiftDocumentScanner_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftDocumentScanner_Tests-dummy.m"; sourceTree = "<group>"; };
+		511C89BEB2B1E4AA1CE99AF020044B01 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52C2CFAFBF9084352D31C73BC5FCA1A4 /* Pods-SwiftDocumentScanner_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftDocumentScanner_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		5ED2D25C6875B51B81A32476D97D29D7 /* Pods-SwiftDocumentScanner_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftDocumentScanner_Example-resources.sh"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		73843B9FEA15E9392550987DCFC6E8DF /* Pods-SwiftDocumentScanner_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftDocumentScanner_Tests.modulemap"; sourceTree = "<group>"; };
+		763CADED68EB6D4D6C41E15B7CFAC584 /* Pods_SwiftDocumentScanner_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDocumentScanner_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		847C8BC2850B98D5925AEE53296DF70D /* Pods-SwiftDocumentScanner_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftDocumentScanner_Example.release.xcconfig"; sourceTree = "<group>"; };
+		88A7379CBF6BC23DCCBFE84B87B47754 /* Pods-SwiftDocumentScanner_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftDocumentScanner_Example-frameworks.sh"; sourceTree = "<group>"; };
+		8ADA7BB25A9A4C0B8E04F5DF49669081 /* Pods_SwiftDocumentScanner_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDocumentScanner_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AFBB000B7C0C1C4DA3EC4BFB8BADB23 /* Pods-SwiftDocumentScanner_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftDocumentScanner_Tests-umbrella.h"; sourceTree = "<group>"; };
+		8D9C5F4F166B192F94F4384E16813053 /* Pods-SwiftDocumentScanner_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftDocumentScanner_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		8EDD8D55DC1DB2EF5F1F7501403A4777 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93AC5723D986BABE4EF8765D31B38AFF /* SwiftDocumentScanner.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = SwiftDocumentScanner.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		962C4CA3D46F6D91F4959ED6C25B5684 /* Pods-SwiftDocumentScanner_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftDocumentScanner_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B6AFB84D0D4F4C49C2DDD990EE20A81A /* Pods-SwiftDocumentScanner_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftDocumentScanner_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		BBBC905E318D51A058E325DF199C1C40 /* SwiftDocumentScanner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftDocumentScanner.xcconfig; sourceTree = "<group>"; };
+		BCC4A2867174C46263BAFBCD94289A18 /* Pods-SwiftDocumentScanner_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftDocumentScanner_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CAB5BF41A3613002A7EED61CB2B9E4AC /* Pods-SwiftDocumentScanner_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftDocumentScanner_Tests-resources.sh"; sourceTree = "<group>"; };
+		CCCDCC09FD7831B9F3901CEAADAF2DD5 /* SwiftDocumentScanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftDocumentScanner-dummy.m"; sourceTree = "<group>"; };
+		CF50A91125FA4588946DAC4CF7E7F9E1 /* Pods-SwiftDocumentScanner_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftDocumentScanner_Example-umbrella.h"; sourceTree = "<group>"; };
+		D0A4CB6935F26C07DE5933EECB9326A6 /* Pods-SwiftDocumentScanner_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftDocumentScanner_Example.modulemap"; sourceTree = "<group>"; };
+		DCE93C7693AD890F0D7F6B675A88F0DE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E583F60C4DCC85DA878D3FBEE2CA96A1 /* Pods-SwiftDocumentScanner_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftDocumentScanner_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EC3F49871A48D0E68079D7F7EAF75D8D /* Pods-SwiftDocumentScanner_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftDocumentScanner_Example-dummy.m"; sourceTree = "<group>"; };
+		FBBB253F341FF3A7B0F5D55496E5581F /* SwiftDocumentScanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftDocumentScanner.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1203EB7E14B6AAC58D006C5631B96CB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37DD8E641D1F0C19D6AD47D18A8FBE61 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C047E5CBB2AC673C7A7A3293D381E44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				144EDEA226BB38A454B841F3AF6B646F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6051E8150D833FCD2B14F71220AA18E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0621F5319AF8D1126FA38A4179783F36 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A32D49155BA5510F2C33612FF34D245 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD81A98C09157AA597A50699789A3428 /* SwiftDocumentScanner */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2CC62CE09D701FB2C520D1A06815549D /* Pods-SwiftDocumentScanner_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8EDD8D55DC1DB2EF5F1F7501403A4777 /* Info.plist */,
+				73843B9FEA15E9392550987DCFC6E8DF /* Pods-SwiftDocumentScanner_Tests.modulemap */,
+				E583F60C4DCC85DA878D3FBEE2CA96A1 /* Pods-SwiftDocumentScanner_Tests-acknowledgements.markdown */,
+				2583568CD8C457FA773980325D096E13 /* Pods-SwiftDocumentScanner_Tests-acknowledgements.plist */,
+				42998D084A5B2E45A2287D5362B86DC7 /* Pods-SwiftDocumentScanner_Tests-dummy.m */,
+				52C2CFAFBF9084352D31C73BC5FCA1A4 /* Pods-SwiftDocumentScanner_Tests-frameworks.sh */,
+				CAB5BF41A3613002A7EED61CB2B9E4AC /* Pods-SwiftDocumentScanner_Tests-resources.sh */,
+				8AFBB000B7C0C1C4DA3EC4BFB8BADB23 /* Pods-SwiftDocumentScanner_Tests-umbrella.h */,
+				2BF2AD0C674ED80A6047140FAE8CF366 /* Pods-SwiftDocumentScanner_Tests.debug.xcconfig */,
+				962C4CA3D46F6D91F4959ED6C25B5684 /* Pods-SwiftDocumentScanner_Tests.release.xcconfig */,
+			);
+			name = "Pods-SwiftDocumentScanner_Tests";
+			path = "Target Support Files/Pods-SwiftDocumentScanner_Tests";
+			sourceTree = "<group>";
+		};
+		76106EF45AA996F12B4D305F35844DA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8ADA7BB25A9A4C0B8E04F5DF49669081 /* Pods_SwiftDocumentScanner_Example.framework */,
+				763CADED68EB6D4D6C41E15B7CFAC584 /* Pods_SwiftDocumentScanner_Tests.framework */,
+				0E77EA20431AB174BF4CC51BE48F61E9 /* SwiftDocumentScanner.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				2A32D49155BA5510F2C33612FF34D245 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				76106EF45AA996F12B4D305F35844DA2 /* Products */,
+				8561FEF36685F5B8189B24BD75C477D0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8561FEF36685F5B8189B24BD75C477D0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE5A1C6476615A532223AAA59D7A4045 /* Pods-SwiftDocumentScanner_Example */,
+				2CC62CE09D701FB2C520D1A06815549D /* Pods-SwiftDocumentScanner_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD2FDD85D71CCEB187A5831338A18DCF /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				35A5BA86D426429916D5D1DFAFE46459 /* LICENSE */,
+				DCE93C7693AD890F0D7F6B675A88F0DE /* README.md */,
+				93AC5723D986BABE4EF8765D31B38AFF /* SwiftDocumentScanner.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		CE5A1C6476615A532223AAA59D7A4045 /* Pods-SwiftDocumentScanner_Example */ = {
+			isa = PBXGroup;
+			children = (
+				0552D96F4CD2E343455099275DDAC421 /* Info.plist */,
+				D0A4CB6935F26C07DE5933EECB9326A6 /* Pods-SwiftDocumentScanner_Example.modulemap */,
+				BCC4A2867174C46263BAFBCD94289A18 /* Pods-SwiftDocumentScanner_Example-acknowledgements.markdown */,
+				8D9C5F4F166B192F94F4384E16813053 /* Pods-SwiftDocumentScanner_Example-acknowledgements.plist */,
+				EC3F49871A48D0E68079D7F7EAF75D8D /* Pods-SwiftDocumentScanner_Example-dummy.m */,
+				88A7379CBF6BC23DCCBFE84B87B47754 /* Pods-SwiftDocumentScanner_Example-frameworks.sh */,
+				5ED2D25C6875B51B81A32476D97D29D7 /* Pods-SwiftDocumentScanner_Example-resources.sh */,
+				CF50A91125FA4588946DAC4CF7E7F9E1 /* Pods-SwiftDocumentScanner_Example-umbrella.h */,
+				B6AFB84D0D4F4C49C2DDD990EE20A81A /* Pods-SwiftDocumentScanner_Example.debug.xcconfig */,
+				847C8BC2850B98D5925AEE53296DF70D /* Pods-SwiftDocumentScanner_Example.release.xcconfig */,
+			);
+			name = "Pods-SwiftDocumentScanner_Example";
+			path = "Target Support Files/Pods-SwiftDocumentScanner_Example";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DCF2148733E691BEF7522E9447B43F0F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				511C89BEB2B1E4AA1CE99AF020044B01 /* Info.plist */,
+				FBBB253F341FF3A7B0F5D55496E5581F /* SwiftDocumentScanner.modulemap */,
+				BBBC905E318D51A058E325DF199C1C40 /* SwiftDocumentScanner.xcconfig */,
+				CCCDCC09FD7831B9F3901CEAADAF2DD5 /* SwiftDocumentScanner-dummy.m */,
+				3321B9B032B01546B1ACF3AFFA72AF63 /* SwiftDocumentScanner-prefix.pch */,
+				3DA93A2F52D66D1A827E316E1EE219C2 /* SwiftDocumentScanner-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SwiftDocumentScanner";
+			sourceTree = "<group>";
+		};
+		DD81A98C09157AA597A50699789A3428 /* SwiftDocumentScanner */ = {
+			isa = PBXGroup;
+			children = (
+				BD2FDD85D71CCEB187A5831338A18DCF /* Pod */,
+				DCF2148733E691BEF7522E9447B43F0F /* Support Files */,
+			);
+			name = SwiftDocumentScanner;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		01BA7CAAA8DF1751E00942342CD66803 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91B277F3F161C993CEA44963B398ABD3 /* SwiftDocumentScanner-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1D2CD7CE0E76E7FEFA5714632518DFE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA776CC428FEF2DCAD4175E874048C59 /* Pods-SwiftDocumentScanner_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEDCEDFEB26FB1AB40ABF813F1F3EC5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD7839F589308980B9F7A150F67114BC /* Pods-SwiftDocumentScanner_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		07E7A13D8DA86EC18AB8380C16AECFF8 /* Pods-SwiftDocumentScanner_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01B2009E44DD6F84EB26E34C9ED6E96D /* Build configuration list for PBXNativeTarget "Pods-SwiftDocumentScanner_Example" */;
+			buildPhases = (
+				92415D0255B03FABB7A308713D387D2E /* Sources */,
+				A6051E8150D833FCD2B14F71220AA18E /* Frameworks */,
+				C1D2CD7CE0E76E7FEFA5714632518DFE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1261F090CED3B31C8F67A67289B17779 /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftDocumentScanner_Example";
+			productName = "Pods-SwiftDocumentScanner_Example";
+			productReference = 8ADA7BB25A9A4C0B8E04F5DF49669081 /* Pods_SwiftDocumentScanner_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		46088862AD25D186854F9E3EDB96FDB5 /* Pods-SwiftDocumentScanner_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25133A65F44B6902C46142F44F25DA52 /* Build configuration list for PBXNativeTarget "Pods-SwiftDocumentScanner_Tests" */;
+			buildPhases = (
+				EF3112D4C1755B20C9F64951CE98BEF1 /* Sources */,
+				7C047E5CBB2AC673C7A7A3293D381E44 /* Frameworks */,
+				CEEDCEDFEB26FB1AB40ABF813F1F3EC5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SwiftDocumentScanner_Tests";
+			productName = "Pods-SwiftDocumentScanner_Tests";
+			productReference = 763CADED68EB6D4D6C41E15B7CFAC584 /* Pods_SwiftDocumentScanner_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B1F398A60FB776D3571F90FAECB94D3A /* SwiftDocumentScanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 523A9A94CE78DE23BCA337120416718D /* Build configuration list for PBXNativeTarget "SwiftDocumentScanner" */;
+			buildPhases = (
+				523434383FCE95780F14EC7EF7B0AAB6 /* Sources */,
+				1203EB7E14B6AAC58D006C5631B96CB5 /* Frameworks */,
+				01BA7CAAA8DF1751E00942342CD66803 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftDocumentScanner;
+			productName = SwiftDocumentScanner;
+			productReference = 0E77EA20431AB174BF4CC51BE48F61E9 /* SwiftDocumentScanner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 76106EF45AA996F12B4D305F35844DA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07E7A13D8DA86EC18AB8380C16AECFF8 /* Pods-SwiftDocumentScanner_Example */,
+				46088862AD25D186854F9E3EDB96FDB5 /* Pods-SwiftDocumentScanner_Tests */,
+				B1F398A60FB776D3571F90FAECB94D3A /* SwiftDocumentScanner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		523434383FCE95780F14EC7EF7B0AAB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB14B3DD84FC0979A62DC2B6186129D2 /* SwiftDocumentScanner-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92415D0255B03FABB7A308713D387D2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88634B5255BD8D367BA509734FEA0DEE /* Pods-SwiftDocumentScanner_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF3112D4C1755B20C9F64951CE98BEF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F14A97DB4C5B7FCE8E8B026C802737C /* Pods-SwiftDocumentScanner_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1261F090CED3B31C8F67A67289B17779 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftDocumentScanner;
+			target = B1F398A60FB776D3571F90FAECB94D3A /* SwiftDocumentScanner */;
+			targetProxy = 7F7828A293C34514D2D50AE71D2458E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		827269710C98D60C14D46BC6AF9BF728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		93E288C47DB297E9CA6B24F322896BD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 847C8BC2850B98D5925AEE53296DF70D /* Pods-SwiftDocumentScanner_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftDocumentScanner_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftDocumentScanner_Example/Pods-SwiftDocumentScanner_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SwiftDocumentScanner_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A326EF89EC1CA8F3F78E69AD0EF3DD32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 962C4CA3D46F6D91F4959ED6C25B5684 /* Pods-SwiftDocumentScanner_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftDocumentScanner_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftDocumentScanner_Tests/Pods-SwiftDocumentScanner_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SwiftDocumentScanner_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B52BA7A820FC18903B6A11EDC67F298F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBBC905E318D51A058E325DF199C1C40 /* SwiftDocumentScanner.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftDocumentScanner/SwiftDocumentScanner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftDocumentScanner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftDocumentScanner/SwiftDocumentScanner.modulemap";
+				PRODUCT_NAME = SwiftDocumentScanner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D48B879545CF68C6A3F182EE4B888818 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BF2AD0C674ED80A6047140FAE8CF366 /* Pods-SwiftDocumentScanner_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftDocumentScanner_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftDocumentScanner_Tests/Pods-SwiftDocumentScanner_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SwiftDocumentScanner_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EECB61B8FEE29A3417DF8333493BED07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6AFB84D0D4F4C49C2DDD990EE20A81A /* Pods-SwiftDocumentScanner_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftDocumentScanner_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftDocumentScanner_Example/Pods-SwiftDocumentScanner_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SwiftDocumentScanner_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F70DFC0490C6F73B0AC6DFA2584EBDE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBBC905E318D51A058E325DF199C1C40 /* SwiftDocumentScanner.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftDocumentScanner/SwiftDocumentScanner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftDocumentScanner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftDocumentScanner/SwiftDocumentScanner.modulemap";
+				PRODUCT_NAME = SwiftDocumentScanner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01B2009E44DD6F84EB26E34C9ED6E96D /* Build configuration list for PBXNativeTarget "Pods-SwiftDocumentScanner_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EECB61B8FEE29A3417DF8333493BED07 /* Debug */,
+				93E288C47DB297E9CA6B24F322896BD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25133A65F44B6902C46142F44F25DA52 /* Build configuration list for PBXNativeTarget "Pods-SwiftDocumentScanner_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D48B879545CF68C6A3F182EE4B888818 /* Debug */,
+				A326EF89EC1CA8F3F78E69AD0EF3DD32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */,
+				827269710C98D60C14D46BC6AF9BF728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		523A9A94CE78DE23BCA337120416718D /* Build configuration list for PBXNativeTarget "SwiftDocumentScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B52BA7A820FC18903B6A11EDC67F298F /* Debug */,
+				F70DFC0490C6F73B0AC6DFA2584EBDE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

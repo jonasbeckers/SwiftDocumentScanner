@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Aqb-i0-V1S">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scanning-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ScannerController" customModule="DocumentScanner_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5m-EA-IaB">
+                                <rect key="frame" x="134.5" y="525" width="105" height="38"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" title="Take Picture">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePicture:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1mi-x5-lxb"/>
+                                    <action selector="takePicture:" destination="CTP-VJ-4UG" eventType="touchUpInside" id="FQx-b9-Pmd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kAQ-kl-YPb" firstAttribute="bottom" secondItem="s5m-EA-IaB" secondAttribute="bottom" constant="40" id="Wgn-5n-ufn"/>
+                            <constraint firstItem="s5m-EA-IaB" firstAttribute="centerX" secondItem="kAQ-kl-YPb" secondAttribute="centerX" id="swu-no-FVb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kAQ-kl-YPb"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Scanning" id="2Vh-sy-miL"/>
+                    <connections>
+                        <outlet property="captureButton" destination="s5m-EA-IaB" id="ESh-d2-jKQ"/>
+                        <segue destination="uiZ-Uj-8aB" kind="show" identifier="Crop" id="hge-Q5-rrp"/>
+                        <segue destination="mxp-ts-cQi" kind="show" identifier="Result" id="aHz-uk-wLp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <exit id="CTP-VJ-4UG" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hgJ-fT-KzF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Aqb-i0-V1S" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="blackTranslucent" translucent="NO" id="XVg-uR-PA6">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="cOx-BY-otO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hcu-hB-sEo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-276" y="134"/>
+        </scene>
+        <!--Cropping-->
+        <scene sceneID="BVT-2E-b7J">
+            <objects>
+                <viewController id="uiZ-Uj-8aB" customClass="CropController" customModule="DocumentScanner_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qEu-Me-Znb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ywi-ob-ict">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="irm-QW-cbu" firstAttribute="trailing" secondItem="ywi-ob-ict" secondAttribute="trailing" id="LvJ-BO-rN8"/>
+                            <constraint firstItem="ywi-ob-ict" firstAttribute="leading" secondItem="irm-QW-cbu" secondAttribute="leading" id="PZ2-Er-PfZ"/>
+                            <constraint firstItem="irm-QW-cbu" firstAttribute="bottom" secondItem="ywi-ob-ict" secondAttribute="bottom" id="cTe-qA-oPB"/>
+                            <constraint firstItem="ywi-ob-ict" firstAttribute="top" secondItem="irm-QW-cbu" secondAttribute="top" id="lY3-Vc-qaK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="irm-QW-cbu"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cropping" id="UG9-L5-eOK">
+                        <barButtonItem key="rightBarButtonItem" title="Crop" id="1qs-Zp-jQ4">
+                            <connections>
+                                <action selector="cropImage:" destination="uiZ-Uj-8aB" id="QLe-VA-43D"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="ywi-ob-ict" id="oG2-hO-qZX"/>
+                        <segue destination="mxp-ts-cQi" kind="show" identifier="Result" id="sD0-Qc-Ebq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DZK-0r-UXe" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1239" y="134"/>
+        </scene>
+        <!--Result-->
+        <scene sceneID="jVu-6k-ubU">
+            <objects>
+                <viewController id="mxp-ts-cQi" customClass="ResultController" customModule="DocumentScanner_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ptk-c8-07k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kCy-PG-tkl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3UV-cC-Ntd" firstAttribute="bottom" secondItem="kCy-PG-tkl" secondAttribute="bottom" id="10l-oM-PLC"/>
+                            <constraint firstItem="kCy-PG-tkl" firstAttribute="leading" secondItem="3UV-cC-Ntd" secondAttribute="leading" id="Yc4-9Y-MbJ"/>
+                            <constraint firstAttribute="trailing" secondItem="kCy-PG-tkl" secondAttribute="trailing" id="sSl-ey-0N2"/>
+                            <constraint firstItem="kCy-PG-tkl" firstAttribute="top" secondItem="Ptk-c8-07k" secondAttribute="top" id="yqU-yP-lvF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3UV-cC-Ntd"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Result" id="get-0Q-ZVP"/>
+                    <connections>
+                        <outlet property="imageView" destination="kCy-PG-tkl" id="t0c-O6-kxq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ynH-ak-9Q7" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1238" y="883"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="sD0-Qc-Ebq"/>
+    </inferredMetricsTieBreakers>
+</document>

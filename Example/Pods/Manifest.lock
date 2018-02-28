@@ -1,0 +1,16 @@
+PODS:
+  - SwiftDocumentScanner (0.1.0)
+
+DEPENDENCIES:
+  - SwiftDocumentScanner (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftDocumentScanner:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SwiftDocumentScanner: adf89e74f2444667916b39bbaeeb28c20b1cd911
+
+PODFILE CHECKSUM: fa8f5f0c4d6bebfbde7029638fbb0e52af59fa61
+
+COCOAPODS: 1.4.0
