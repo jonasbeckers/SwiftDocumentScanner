@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SwiftDocumentScanner_Example' do
+  pod 'SwiftDocumentScanner', :path => '../'
+
+  target 'SwiftDocumentScanner_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
