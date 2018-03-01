@@ -180,6 +180,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 5BTSXG27WA;
 						LastSwiftMigration = 0900;
 					};
 				};
@@ -241,10 +242,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftDocumentScanner_Example/Pods-SwiftDocumentScanner_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CropView/CropView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftDocumentScanner/SwiftDocumentScanner.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CropView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDocumentScanner.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,7 +343,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -386,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -399,7 +402,8 @@
 			baseConfigurationReference = ED7459F8B2123A449B6C948C /* Pods-SwiftDocumentScanner_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = SwiftDocumentScanner/Info.plist;
+				DEVELOPMENT_TEAM = 5BTSXG27WA;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftDocumentScanner/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -414,7 +418,8 @@
 			baseConfigurationReference = 8EBFD8F0B4D2BFA8A2108EA6 /* Pods-SwiftDocumentScanner_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = SwiftDocumentScanner/Info.plist;
+				DEVELOPMENT_TEAM = 5BTSXG27WA;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftDocumentScanner/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";

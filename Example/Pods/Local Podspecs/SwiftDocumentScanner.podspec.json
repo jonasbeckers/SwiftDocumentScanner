@@ -1,8 +1,7 @@
 {
   "name": "SwiftDocumentScanner",
   "version": "0.1.0",
-  "summary": "A short description of SwiftDocumentScanner.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "Documentscanner app like Notes.",
   "homepage": "https://github.com/jonasbeckers/SwiftDocumentScanner",
   "license": {
     "type": "MIT",
@@ -16,7 +15,12 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "SwiftDocumentScanner/Classes/**/*"
+  "source_files": "SwiftDocumentScanner/Classes/**/*.swift",
+  "dependencies": {
+    "CropView": [
+      "0.1.3"
+    ]
+  }
 }

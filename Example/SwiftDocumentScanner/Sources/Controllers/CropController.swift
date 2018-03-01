@@ -6,7 +6,7 @@
 //  Copyright © 2018 CocoaPods. All rights reserved.
 //
 
-import DocumentScanner
+import SwiftDocumentScanner
 import UIKit
 
 class CropController: DocumentCropViewController {

@@ -1,0 +1,6 @@
+framework module CropView {
+  umbrella header "CropView-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,7 +7,7 @@
 //
 
 import AVFoundation
-import DocumentScanner
+import SwiftDocumentScanner
 import UIKit
 
 class ScannerController: DocumentScannerViewController {
