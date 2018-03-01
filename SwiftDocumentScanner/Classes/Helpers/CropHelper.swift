@@ -12,12 +12,18 @@ public struct CropHelper {
 
 	public typealias Completion = (Result) -> Void
 
-	static func crop(ciImage: CIImage, quad: Quad, completion: @escaping Completion) {
+	static func crop(buffer: CVPixelBuffer, quad: Quad, completion: @escaping Completion) {
 		DispatchQueue.global(qos: .userInteractive).async {
+			let ciImage = CIImage(cvPixelBuffer: buffer)
+			let context = CIContext()
+
+			guard let cgImage = context.createCGImage(ciImage, from: ciImage.extent) else { return }
+			let image = UIImage(cgImage: cgImage, scale: 1, orientation: .right).fixOrientation()
+			print(image.imageOrientation.rawValue)
+
 			let size = ciImage.extent.size
 			let width = Int(size.width)
 			let height = Int(size.height)
-			let image = UIImage(ciImage: ciImage)
 
 			let points: [CGPoint]
 			if #available(iOS 11.0, *) {
@@ -28,7 +34,7 @@ public struct CropHelper {
 			let converted = points.map { $0.cartesian(height: size.height) }
 
 			let result: Result
-			if let quad = Quad(clockwise: converted), let cropped = applyPersperpectiveCorrection(image: image, quad: quad) {
+			if let quad = Quad(clockwise: converted), let cropped = applyPersperpectiveCorrection(ciImage: ciImage, quad: quad) {
 				result = Result(original: image, cropped: cropped, quad: quad)
 			} else {
 				result = Result(original: image, cropped: nil, quad: nil)
@@ -40,11 +46,7 @@ public struct CropHelper {
 		}
 	}
 
-	private static func applyPersperpectiveCorrection(image: UIImage, quad: Quad) -> UIImage? {
-		guard let ciImage = image.ciImage else { return nil }
-		let scale = image.scale
-		let orientation: UIImageOrientation = .right
-
+	private static func applyPersperpectiveCorrection(ciImage: CIImage, quad: Quad) -> UIImage? {
 		guard let filter = CIFilter(name: "CIPerspectiveCorrection") else { return nil }
 		let context = CIContext(options: nil)
 
@@ -55,8 +57,7 @@ public struct CropHelper {
 		filter.setValue(ciImage, forKey: kCIInputImageKey)
 
 		guard let correctedImage = filter.outputImage, let cgImage = context.createCGImage(correctedImage, from: correctedImage.extent) else { return nil }
-
-		return UIImage(cgImage: cgImage, scale: scale, orientation: orientation).fixOrientation(orientation: .right)
+		return UIImage(cgImage: cgImage, scale: 1, orientation: .right)
 	}
 
 }

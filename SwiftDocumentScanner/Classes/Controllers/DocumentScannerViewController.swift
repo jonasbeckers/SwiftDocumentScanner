@@ -92,9 +92,8 @@ extension DocumentScannerViewController: AutoDetectorDelegate {
 
 	public func detector(success: Observation) {
 		guard let quad = success.quad, let mirrored = quad.mirrorUp() else { return }
-		let ciImage = CIImage(cvPixelBuffer: success.buffer)
 
-		CropHelper.crop(ciImage: ciImage, quad: mirrored) { result in
+		CropHelper.crop(buffer: success.buffer, quad: mirrored) { result in
 			self.scannerDelegate?.documentScanner(result: result)
 		}
 	}
