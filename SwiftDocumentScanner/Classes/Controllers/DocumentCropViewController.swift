@@ -19,7 +19,7 @@ public protocol DocumentCropViewControllerDelegate: class {
 open class DocumentCropViewController: UIViewController {
 
 	@IBOutlet public var imageView: UIImageView!
-	private var cropView = SECropView()
+	public private(set) var cropView = SECropView()
 
 	private var points: [CGPoint] = [] {
 		didSet {
@@ -47,12 +47,7 @@ open class DocumentCropViewController: UIViewController {
 		SECropView.goodAreaColor = .white
 		SECropView.badAreaColor = .red
 
-		imageView.image = image
-		imageView.contentMode = .scaleAspectFit
-		points = defaultCropViewCorners()
-
-		guard let image = image else { return }
-		rectangleDetector.detect(image: image, completion: handleDetection)
+		configure()
 	}
 
 	open override func viewDidLayoutSubviews() {
@@ -62,6 +57,17 @@ open class DocumentCropViewController: UIViewController {
 		cropView.layoutSubviews()
 
 		updateCropview()
+	}
+
+	public func configure() {
+		image = image?.fixOrientation()
+		imageView.transform = CGAffineTransform.identity
+		imageView.image = image
+		imageView.contentMode = .scaleAspectFit
+		points = defaultCropViewCorners()
+
+		guard let image = image else { return }
+		rectangleDetector.detect(image: image, completion: handleDetection)
 	}
 
 	private func updateCropview() {
