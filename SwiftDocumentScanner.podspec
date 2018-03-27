@@ -8,5 +8,5 @@ Pod::Spec.new do |s|
 	s.source           = { :git => 'https://github.com/jonasbeckers/SwiftDocumentScanner.git', :tag => s.version.to_s }
 	s.ios.deployment_target = '9.0'
 	s.source_files = 'SwiftDocumentScanner/Classes/**/*.swift'
-	s.dependency 'CropView', '0.1.3'
+	s.dependency 'CropView', '0.1.5'
 end
