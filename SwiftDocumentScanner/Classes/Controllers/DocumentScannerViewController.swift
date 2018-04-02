@@ -85,7 +85,7 @@ extension DocumentScannerViewController: AutoDetectorDelegate {
 
 	public func detector(update: Observation) {
 		guard let points = update.quad?.mirrorUp()?.points else { return }
-		let converted = points.flatMap { previewLayer?.layerPointConverted(fromCaptureDevicePoint: $0) }
+		let converted = points.compactMap { previewLayer?.layerPointConverted(fromCaptureDevicePoint: $0) }
 		let path = converted.quadPath
 		trackView.update(path: path)
 	}
