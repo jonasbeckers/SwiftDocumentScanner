@@ -29,7 +29,7 @@ public struct CropHelper {
 			if #available(iOS 11.0, *) {
 				points = quad.points.map { VNImagePointForNormalizedPoint($0, width, height) }
 			} else {
-				points = quad.points.map { $0.scaled(size: size) }
+				points = quad.points.map { $0.scaledAbsolute(size: size) }
 			}
 			let converted = points.map { $0.cartesian(height: size.height) }
 

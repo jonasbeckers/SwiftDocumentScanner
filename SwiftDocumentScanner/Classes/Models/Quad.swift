@@ -53,7 +53,7 @@ extension Quad {
 extension Quad {
 
 	func absolute(size: CGSize) -> Quad {
-		return Quad(topLeft: topLeft.scaled(size: size), topRight: topLeft.scaled(size: size), bottomLeft: bottomLeft.scaled(size: size), bottomRight: bottomRight.scaled(size: size))
+		return Quad(topLeft: topLeft.scaledAbsolute(size: size), topRight: topLeft.scaledAbsolute(size: size), bottomLeft: bottomLeft.scaledAbsolute(size: size), bottomRight: bottomRight.scaledAbsolute(size: size))
 	}
 
 	func mirrorUp() -> Quad? {

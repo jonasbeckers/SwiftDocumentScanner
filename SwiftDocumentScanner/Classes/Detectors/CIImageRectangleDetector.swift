@@ -21,8 +21,8 @@ public final class CIImageRectangleDetector: ImageRectangleDetector {
 
 			if let feature = sortedBySize.first as? CIRectangleFeature {
 				let size = ciImage.extent.size
-				let points = [feature.topLeft, feature.topRight, feature.bottomLeft, feature.bottomRight]
-				let normalized = points.map { $0.scaled(size: size) }
+				let points = [feature.topLeft, feature.topRight, feature.bottomRight, feature.bottomLeft]
+				let normalized = points.map { $0.scaledRelative(size: size) }
 
 				let quad = Quad(clockwise: normalized)
 

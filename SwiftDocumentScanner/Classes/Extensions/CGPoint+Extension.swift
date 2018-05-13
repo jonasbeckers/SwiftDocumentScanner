@@ -13,7 +13,11 @@ extension CGPoint {
 		return CGPoint(x: x, y: height - y)
 	}
 
-	public func scaled(size: CGSize) -> CGPoint {
+	public func scaledRelative(size: CGSize) -> CGPoint {
+		return CGPoint(x: x / size.width, y: y / size.height)
+	}
+
+	public func scaledAbsolute(size: CGSize) -> CGPoint {
 		return CGPoint(x: x * size.width, y: y * size.height)
 	}
 

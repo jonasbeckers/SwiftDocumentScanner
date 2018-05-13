@@ -80,7 +80,7 @@ open class DocumentCropViewController: UIViewController {
 		if #available(iOS 11, *) {
 			converted = points.map { VNImagePointForNormalizedPoint($0, width, height) }
 		} else {
-			converted = points.map { $0.scaled(size: size) }
+			converted = points.map { $0.scaledAbsolute(size: size) }
 		}
 
 		updateCorners(points: converted.map { $0.cartesian(height: size.height) })
