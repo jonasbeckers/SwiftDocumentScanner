@@ -9,7 +9,7 @@ import UIKit
 
 public extension UIImage {
 
-	public func fixOrientation(orientation: UIImageOrientation? = nil) -> UIImage {
+	public func fixOrientation(orientation: UIImage.Orientation? = nil) -> UIImage {
 		guard orientation == nil && imageOrientation != .up else { return self }
 
 		var transform = CGAffineTransform.identity
