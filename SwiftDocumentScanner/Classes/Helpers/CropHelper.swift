@@ -19,7 +19,6 @@ public struct CropHelper {
 
 			guard let cgImage = context.createCGImage(ciImage, from: ciImage.extent) else { return }
 			let image = UIImage(cgImage: cgImage, scale: 1, orientation: .right).fixOrientation()
-			print(image.imageOrientation.rawValue)
 
 			let size = ciImage.extent.size
 			let width = Int(size.width)
