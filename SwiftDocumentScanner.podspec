@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 	s.name             = 'SwiftDocumentScanner'
-	s.version          = '0.1.1'
+	s.version          = '0.1.2'
 	s.summary          = 'Documentscanner app like Notes.'
 	s.homepage         = 'https://github.com/jonasbeckers/SwiftDocumentScanner'
 	s.license          = { :type => 'MIT', :file => 'LICENSE' }
