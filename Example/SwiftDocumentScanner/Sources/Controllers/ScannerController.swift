@@ -29,7 +29,7 @@ class ScannerController: DocumentScannerViewController {
 
         super.viewDidLoad()
 
-		view.bringSubview(toFront: captureButton)
+        view.bringSubviewToFront(captureButton)
     }
 
 	@IBAction func takePicture(_ sender: Any) {
