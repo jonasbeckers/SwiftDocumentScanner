@@ -7,24 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4CA8F39B7BEC01C13E212E5A /* Pods_SwiftDocumentScanner_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B588F333D68600F7500529BA /* Pods_SwiftDocumentScanner_Example.framework */; };
 		DDC8CB3A204764860070E650 /* ResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8CB30204764850070E650 /* ResultController.swift */; };
 		DDC8CB3B204764860070E650 /* ScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8CB31204764850070E650 /* ScannerController.swift */; };
 		DDC8CB3C204764860070E650 /* CropController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8CB32204764850070E650 /* CropController.swift */; };
 		DDC8CB3D204764860070E650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8CB34204764850070E650 /* AppDelegate.swift */; };
 		DDC8CB3E204764860070E650 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC8CB36204764860070E650 /* Assets.xcassets */; };
 		DDC8CB3F204764860070E650 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC8CB37204764860070E650 /* Main.storyboard */; };
+		E153BD351C72811B1C2BB911 /* Pods_SwiftDocumentScanner_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD262C684DD1ACF5F0969906 /* Pods_SwiftDocumentScanner_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17393690A235B5EDE0A5469F /* Pods-SwiftDocumentScanner_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDocumentScanner_Example.debug.xcconfig"; path = "Target Support Files/Pods-SwiftDocumentScanner_Example/Pods-SwiftDocumentScanner_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		25AAA1B038B530D859A32658 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		4FE054256D3156EBE7D853F8 /* Pods-SwiftDocumentScanner_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDocumentScanner_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDocumentScanner_Tests/Pods-SwiftDocumentScanner_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SwiftDocumentScanner_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDocumentScanner_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A6506577B9416A68E6C836 /* SwiftDocumentScanner.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftDocumentScanner.podspec; path = ../SwiftDocumentScanner.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		8EBFD8F0B4D2BFA8A2108EA6 /* Pods-SwiftDocumentScanner_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDocumentScanner_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDocumentScanner_Example/Pods-SwiftDocumentScanner_Example.release.xcconfig"; sourceTree = "<group>"; };
-		9CDE002DEF728EA9CC34B482 /* Pods-SwiftDocumentScanner_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDocumentScanner_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDocumentScanner_Tests/Pods-SwiftDocumentScanner_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B588F333D68600F7500529BA /* Pods_SwiftDocumentScanner_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDocumentScanner_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC1D1EEE4C244C7073ACD71B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		CF4B6BF51CA10F98D7384049 /* Pods-SwiftDocumentScanner_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDocumentScanner_Example.release.xcconfig"; path = "Target Support Files/Pods-SwiftDocumentScanner_Example/Pods-SwiftDocumentScanner_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DDC8CB30204764850070E650 /* ResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultController.swift; sourceTree = "<group>"; };
 		DDC8CB31204764850070E650 /* ScannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerController.swift; sourceTree = "<group>"; };
 		DDC8CB32204764850070E650 /* CropController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropController.swift; sourceTree = "<group>"; };
@@ -32,8 +30,7 @@
 		DDC8CB36204764860070E650 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDC8CB38204764860070E650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDC8CB39204764860070E650 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE2AE748F8875EABFF02E8D9 /* Pods_SwiftDocumentScanner_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDocumentScanner_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED7459F8B2123A449B6C948C /* Pods-SwiftDocumentScanner_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDocumentScanner_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDocumentScanner_Example/Pods-SwiftDocumentScanner_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		FD262C684DD1ACF5F0969906 /* Pods_SwiftDocumentScanner_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDocumentScanner_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,18 +38,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CA8F39B7BEC01C13E212E5A /* Pods_SwiftDocumentScanner_Example.framework in Frameworks */,
+				E153BD351C72811B1C2BB911 /* Pods_SwiftDocumentScanner_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		30C6F00256858079B48594C4 /* Frameworks */ = {
+		00D6E2BF42B1E50416DC3755 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B588F333D68600F7500529BA /* Pods_SwiftDocumentScanner_Example.framework */,
-				DE2AE748F8875EABFF02E8D9 /* Pods_SwiftDocumentScanner_Tests.framework */,
+				17393690A235B5EDE0A5469F /* Pods-SwiftDocumentScanner_Example.debug.xcconfig */,
+				CF4B6BF51CA10F98D7384049 /* Pods-SwiftDocumentScanner_Example.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3BE8A74343A58886B7A555C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD262C684DD1ACF5F0969906 /* Pods_SwiftDocumentScanner_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -63,8 +68,8 @@
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for SwiftDocumentScanner */,
 				607FACD11AFB9204008FA782 /* Products */,
-				F541C57851E247E3C15F46AE /* Pods */,
-				30C6F00256858079B48594C4 /* Frameworks */,
+				00D6E2BF42B1E50416DC3755 /* Pods */,
+				3BE8A74343A58886B7A555C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,17 +138,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		F541C57851E247E3C15F46AE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				ED7459F8B2123A449B6C948C /* Pods-SwiftDocumentScanner_Example.debug.xcconfig */,
-				8EBFD8F0B4D2BFA8A2108EA6 /* Pods-SwiftDocumentScanner_Example.release.xcconfig */,
-				9CDE002DEF728EA9CC34B482 /* Pods-SwiftDocumentScanner_Tests.debug.xcconfig */,
-				4FE054256D3156EBE7D853F8 /* Pods-SwiftDocumentScanner_Tests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,11 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "SwiftDocumentScanner_Example" */;
 			buildPhases = (
-				175E70073F81DACEAF34C87D /* [CP] Check Pods Manifest.lock */,
+				8DEC171A0A2123D3647427D1 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				21796D372EAD9FEACB7C0915 /* [CP] Embed Pods Frameworks */,
+				8E3556C17BCC8EE510C65FD6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,16 +208,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		175E70073F81DACEAF34C87D /* [CP] Check Pods Manifest.lock */ = {
+		8DEC171A0A2123D3647427D1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SwiftDocumentScanner_Example-checkManifestLockResult.txt",
 			);
@@ -232,10 +230,12 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		21796D372EAD9FEACB7C0915 /* [CP] Embed Pods Frameworks */ = {
+		8E3556C17BCC8EE510C65FD6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftDocumentScanner_Example/Pods-SwiftDocumentScanner_Example-frameworks.sh",
@@ -243,6 +243,8 @@
 				"${BUILT_PRODUCTS_DIR}/SwiftDocumentScanner/SwiftDocumentScanner.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CropView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDocumentScanner.framework",
@@ -385,14 +387,14 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED7459F8B2123A449B6C948C /* Pods-SwiftDocumentScanner_Example.debug.xcconfig */;
+			baseConfigurationReference = 17393690A235B5EDE0A5469F /* Pods-SwiftDocumentScanner_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5BTSXG27WA;
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftDocumentScanner/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jonasbeckers.swiftdocumentscanner;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonasbeckers.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.2;
@@ -401,14 +403,14 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8EBFD8F0B4D2BFA8A2108EA6 /* Pods-SwiftDocumentScanner_Example.release.xcconfig */;
+			baseConfigurationReference = CF4B6BF51CA10F98D7384049 /* Pods-SwiftDocumentScanner_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5BTSXG27WA;
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftDocumentScanner/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jonasbeckers.swiftdocumentscanner;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonasbeckers.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.2;

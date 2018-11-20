@@ -1,7 +1,7 @@
 PODS:
-  - CropView (0.1.5)
+  - CropView (0.1.6)
   - SwiftDocumentScanner (0.1.2):
-    - CropView (= 0.1.5)
+    - CropView (= 0.1.6)
 
 DEPENDENCIES:
   - SwiftDocumentScanner (from `../`)
@@ -15,8 +15,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CropView: 378c026d683fc3956e013a6a523d0b428298ea0d
-  SwiftDocumentScanner: c73de56ea92164c3caca897deae85d0b4f791348
+  CropView: 2fad8340e54f433fd68a112a27007a4be4f580d0
+  SwiftDocumentScanner: 038c994209ca6e583884550a654f0f9c500c8d13
 
 PODFILE CHECKSUM: 9b231fa4d40eac987db64f6e849f0e8775a035ba
 

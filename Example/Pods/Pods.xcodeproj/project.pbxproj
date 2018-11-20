@@ -656,69 +656,6 @@
 			};
 			name = Debug;
 		};
-		1B64983A8C4F4AA8F5479A72CE8446E9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 573E5C03168BB8A2394E993651201880 /* SwiftDocumentScanner.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftDocumentScanner/SwiftDocumentScanner-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftDocumentScanner/SwiftDocumentScanner-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftDocumentScanner/SwiftDocumentScanner.modulemap";
-				PRODUCT_MODULE_NAME = SwiftDocumentScanner;
-				PRODUCT_NAME = SwiftDocumentScanner;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5626D5ED89AE159D4E8FC970FBC7AFC9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 573E5C03168BB8A2394E993651201880 /* SwiftDocumentScanner.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftDocumentScanner/SwiftDocumentScanner-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftDocumentScanner/SwiftDocumentScanner-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftDocumentScanner/SwiftDocumentScanner.modulemap";
-				PRODUCT_MODULE_NAME = SwiftDocumentScanner;
-				PRODUCT_NAME = SwiftDocumentScanner;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		586BFA7ECB2A69A60B1C250C5589F19F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 06045D4A56AF0A131C77461E701C411C /* Pods-SwiftDocumentScanner_Example.debug.xcconfig */;
@@ -879,6 +816,71 @@
 			};
 			name = Debug;
 		};
+		D423BEC2B11A8774CD029FC001532E14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 573E5C03168BB8A2394E993651201880 /* SwiftDocumentScanner.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftDocumentScanner/SwiftDocumentScanner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftDocumentScanner/SwiftDocumentScanner-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftDocumentScanner/SwiftDocumentScanner.modulemap";
+				PRODUCT_MODULE_NAME = SwiftDocumentScanner;
+				PRODUCT_NAME = SwiftDocumentScanner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D44F227E8EB840CFB4A75DFFBAFCF28F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 573E5C03168BB8A2394E993651201880 /* SwiftDocumentScanner.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftDocumentScanner/SwiftDocumentScanner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftDocumentScanner/SwiftDocumentScanner-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftDocumentScanner/SwiftDocumentScanner.modulemap";
+				PRODUCT_MODULE_NAME = SwiftDocumentScanner;
+				PRODUCT_NAME = SwiftDocumentScanner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		D9FED85A7A6F2EBE8949B9072012B917 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3C0C55E0242BEEDB4DD88C302CBDD44F /* CropView.xcconfig */;
@@ -926,8 +928,8 @@
 		3814F3A991CBF6C550053D037AFAE836 /* Build configuration list for PBXNativeTarget "SwiftDocumentScanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5626D5ED89AE159D4E8FC970FBC7AFC9 /* Debug */,
-				1B64983A8C4F4AA8F5479A72CE8446E9 /* Release */,
+				D423BEC2B11A8774CD029FC001532E14 /* Debug */,
+				D44F227E8EB840CFB4A75DFFBAFCF28F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

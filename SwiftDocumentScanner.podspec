@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
 	s.license          = { :type => 'MIT', :file => 'LICENSE' }
 	s.author           = { 'jonasbeckers' => 'jonas.beckers1996@gmail.com' }
 	s.source           = { :git => 'https://github.com/jonasbeckers/SwiftDocumentScanner.git', :tag => s.version.to_s }
-	s.ios.deployment_target = '9.0'
+	s.ios.deployment_target = '10.0'
 	s.source_files = 'SwiftDocumentScanner/Classes/**/*.swift'
-	s.dependency 'CropView', '0.1.5'
+	s.dependency 'CropView', '0.1.6'
 end
