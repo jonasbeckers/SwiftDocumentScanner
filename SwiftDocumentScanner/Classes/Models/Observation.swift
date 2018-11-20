@@ -9,6 +9,11 @@ import CoreImage
 
 public struct Observation {
 
+    public init(quad: Quad?, buffer: CVPixelBuffer) {
+        self.quad = quad
+        self.buffer = buffer
+    }
+
 	public let quad: Quad?
 	public let buffer: CVPixelBuffer
 
