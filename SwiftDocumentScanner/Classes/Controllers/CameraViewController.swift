@@ -22,7 +22,7 @@ open class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampl
     public var preset: AVCaptureSession.Preset = .high
     public var videoGravity: AVLayerVideoGravity = .resizeAspectFill
     public var lowLightBoost: Bool = false
-
+	public var videoOrientation: AVCaptureVideoOrientation = .portrait
     public var tapToFocus: Bool = false
     public var flashMode: AVCaptureDevice.FlashMode = .off
 
@@ -49,7 +49,7 @@ open class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampl
 
         let previewLayer = AVCaptureVideoPreviewLayer(session: session)
         previewLayer.videoGravity = videoGravity
-        previewLayer.connection?.videoOrientation = .portrait
+        previewLayer.connection?.videoOrientation = videoOrientation
         view.layer.insertSublayer(previewLayer, at: 0)
         self.previewLayer = previewLayer
 
@@ -94,7 +94,7 @@ open class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampl
 
         previewLayer?.frame = view.bounds
         previewLayer?.videoGravity = videoGravity
-        previewLayer?.connection?.videoOrientation = .portrait
+        previewLayer?.connection?.videoOrientation = videoOrientation
     }
 
     public func takePhoto() {
