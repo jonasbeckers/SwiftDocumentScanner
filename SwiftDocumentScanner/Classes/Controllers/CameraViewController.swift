@@ -22,7 +22,7 @@ open class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampl
     public var preset: AVCaptureSession.Preset = .high
     public var videoGravity: AVLayerVideoGravity = .resizeAspectFill
     public var lowLightBoost: Bool = false
-	public var videoOrientation: AVCaptureVideoOrientation = .portrait
+    public var videoOrientation: AVCaptureVideoOrientation = .portrait
     public var tapToFocus: Bool = false
     public var flashMode: AVCaptureDevice.FlashMode = .off
 
