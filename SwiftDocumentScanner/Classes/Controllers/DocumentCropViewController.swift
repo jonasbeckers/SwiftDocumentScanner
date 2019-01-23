@@ -13,6 +13,8 @@ public protocol DocumentCropViewControllerDelegate: class {
 
 	func documentCropViewController(result: Result)
 	func documentCropViewController(failed: Error)
+	func documentCropViewControllerWillConfigure()
+	func documentCropViewControllerDidConfigure()
 
 }
 
@@ -60,6 +62,9 @@ open class DocumentCropViewController: UIViewController {
 	}
 
 	public func configure() {
+		DispatchQueue.main.async { [weak self] in
+			self?.cropDelegate?.documentCropViewControllerWillConfigure()
+		}
 		image = image?.fixOrientation()
 		imageView.transform = CGAffineTransform.identity
 		imageView.image = image
@@ -68,6 +73,9 @@ open class DocumentCropViewController: UIViewController {
 
 		guard let image = image else { return }
 		rectangleDetector.detect(image: image, completion: handleDetection)
+		DispatchQueue.main.async { [weak self] in
+			self?.cropDelegate?.documentCropViewControllerDidConfigure()
+		}
 	}
 
 	private func updateCropview() {
