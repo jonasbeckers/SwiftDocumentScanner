@@ -9,7 +9,7 @@ import UIKit
 
 public extension Array where Element == CGPoint {
 
-	public var quadPath: UIBezierPath {
+	var quadPath: UIBezierPath {
 		let path = UIBezierPath()
 
 		guard count == 4 else { return path }
