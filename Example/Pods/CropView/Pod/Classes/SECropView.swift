@@ -5,7 +5,6 @@
 //  Created by Никита Разумный on 11/5/17.
 //  Copyright © 2017 resquare. All rights reserved.
 //
-
 import UIKit
 import AVFoundation
 
@@ -23,9 +22,9 @@ public class SECropView: UIView {
     fileprivate var cornerOnTouch = -1
     fileprivate var imageView : UIImageView?
 
-	var isPathvalid: Bool {
-		return areaQuadrangle.isPathValid
-	}
+    var isPathvalid: Bool {
+        return areaQuadrangle.isPathValid
+    }
 
     public private(set) var cornerLocations : [CGPoint]?
     
@@ -65,8 +64,9 @@ public class SECropView: UIView {
         guard let cornersOnImage = cornerLocations else { return nil }
         
         let imageOrigin = AVMakeRect(aspectRatio: imageSize, insideRect: imageViewFrame).origin
-        let shift = CGPoint(x: -cropViewOrigin.x + imageViewOrigin.x + imageOrigin.x + SECropView.cornerSize / 2.0,
-                            y: -cropViewOrigin.y + imageViewOrigin.y + imageOrigin.y + SECropView.cornerSize / 2.0)
+        let shiftX = -cropViewOrigin.x + imageViewOrigin.x + imageOrigin.x + SECropView.cornerSize / 2.0
+    let shiftY = -cropViewOrigin.y + imageViewOrigin.y + imageOrigin.y + SECropView.cornerSize / 2.0
+        let shift = CGPoint(x: shiftX, y: shiftY)
         
         return cornersOnImage.map {
             CGPoint(x: $0.x * scale.x + shift.x, y: $0.y * scale.y + shift.y)
@@ -81,7 +81,7 @@ public class SECropView: UIView {
     }
     
     required public init?(coder aDecoder: NSCoder) {
-		super.init(coder: aDecoder)
+        super.init(coder: aDecoder)
         internalInit()
     }
     
@@ -159,10 +159,10 @@ public class SECropView: UIView {
     }
     
     public func setCorners(newCorners: [CGPoint]) {
-		areaQuadrangle.isPathValid = SEQuadrangleHelper.checkConvex(corners: newCorners)
+        areaQuadrangle.isPathValid = SEQuadrangleHelper.checkConvex(corners: newCorners)
         for i in 0 ..< corners.count {
             cornerLocations?[i] = newCorners[i]
-			corners[i].layer.borderColor = (areaQuadrangle.isPathValid ? SECropView.goodAreaColor : SECropView.badAreaColor ).cgColor
+            corners[i].layer.borderColor = (areaQuadrangle.isPathValid ? SECropView.goodAreaColor : SECropView.badAreaColor ).cgColor
         }
         pairPositionsAndViews()
         setNeedsDisplay()
