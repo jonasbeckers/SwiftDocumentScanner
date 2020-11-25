@@ -37,10 +37,8 @@ open class DocumentScannerViewController: CameraViewController {
 	open override func viewDidLoad() {
 		super.viewDidLoad()
 
-		if #available(iOS 11.0, *) {
-			rectangleDetector = VisionSequenceRectangleDetector()
-		}
-
+        rectangleDetector = VisionSequenceRectangleDetector()
+    
 		view.addSubview(trackView)
 		autoDetector.delegate = self
 	}
