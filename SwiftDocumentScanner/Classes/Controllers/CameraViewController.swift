@@ -9,7 +9,7 @@ import AVFoundation
 import Foundation
 import UIKit
 
-public protocol CameraViewControllerDelegate: class {
+public protocol CameraViewControllerDelegate: AnyObject {
 
     func cameraViewController(didFocus point: CGPoint)
     func cameraViewController(update status: AVAuthorizationStatus)
