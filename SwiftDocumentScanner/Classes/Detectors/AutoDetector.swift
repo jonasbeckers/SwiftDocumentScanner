@@ -8,7 +8,7 @@
 import CoreImage
 import CoreGraphics
 
-public protocol AutoDetectorDelegate: class {
+public protocol AutoDetectorDelegate: AnyObject {
 
 	func detector(update: Observation)
 	func detector(success: Observation)
